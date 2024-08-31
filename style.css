@@ -7,19 +7,46 @@ body{
 
 .container{
     background-color: gray;
-    height: 500px;
+    height: auto;
     width: 300px;
     border-radius: 15px;
     padding: 1em;
 }
 
 .display   {
-    background-color: cadetblue;
+    background-color: skyblue;
     width: auto;
     height: 3rem;
     border-radius: .5em;
+    margin: 10px;
 }
 
 .keys {
     display: flex;
+}
+
+.keys button{
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+}
+
+.numbers button {
+    background-color: cadetblue;
+}
+
+.operators button{
+    background-color: black;
+    color: skyblue;
+    font-size: 40px;
+}
+
+#clear{
+    background-color: tomato;
+}
+
+#enter{
+    background-color: greenyellow;
 }
