@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
     <div class="container">
@@ -12,26 +13,29 @@
         <div id="display" ></div>
 
         <div class="keys">
-            <div class="numbers">
-                <button type="button">7</button>
-                <button type="button">8</button>
-                <button type="button">9</button>
-                <button type="button">4</button>
-                <button type="button">5</button>
-                <button type="button">6</button>
-                <button type="button">1</button>
-                <button type="button">2</button>
-                <button type="button">3</button>
-                <button type="button" id="clear">C</button>
-                <button type="button">0</button>
-                <button type="button" id="enter">=</button>
+            <div class="operators" id="'controlKeys">
+                <button type="button" id="buttonClear">Clear</button>
+                <button type="button" id="buttonAdd">+</button>
+                <button type="button" id="buttonSubtract">-</button>
+                <button type="button" id="buttonMultiply">*</button>
+                <button type="button" id="buttonDivide">/</button>
+                <button type="button" id="buttonEnter">=</button>
+
             </div>
-            <div class="operators">
-                <button type="button">+</button>
-                <button type="button">-</button>
-                <button type="button">*</button>
-                <button type="button">/</button>
+            <div class="numbers" id="numberKeys">
+                
+                <button type="button" id="button0">0</button>
+                <button type="button" id="button1">1</button>
+                <button type="button" id="button2">2</button>
+                <button type="button" id="button3">3</button>
+                <button type="button" id="button4">4</button>
+                <button type="button" id="button5">5</button>
+                <button type="button" id="button6">6</button>
+                <button type="button" id="button7">7</button>
+                <button type="button" id="button8">8</button>
+                <button type="button" id="button9">9</button>
             </div>
+            
         </div>
 
     </div>

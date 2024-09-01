@@ -8,7 +8,7 @@ body{
 .container{
     background-color: gray;
     height: auto;
-    width: 300px;
+    width: auto;
     border-radius: 15px;
     padding: 1em;
 }
@@ -28,6 +28,15 @@ body{
 }
 
 .keys {
+    display: flex;
+    flex-direction: column;
+}
+
+.operators{
+    display: flex;
+}
+
+.numbers{
     display: flex;
 }
 
@@ -49,10 +58,12 @@ body{
     color: skyblue;
 }
 
-#clear{
-    background-color: tomato;
+#buttonClear{
+    background-color: darkred;
+    flex-grow: 1;
 }
 
-#enter{
-    background-color: greenyellow;
+#buttonEnter{
+    background-color: darkolivegreen;
+    flex-grow: 3;
 }
