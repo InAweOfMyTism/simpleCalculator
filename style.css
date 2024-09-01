@@ -16,7 +16,7 @@ body{
 #display   {
     background-color: skyblue;
     width: auto;
-    height: auto;
+    height: 3rem;
     padding: .5em;
     border-radius: .5em;
     margin: 10px;
@@ -60,10 +60,9 @@ body{
 
 #buttonClear{
     background-color: darkred;
-    flex-grow: 1;
+    width: auto;
 }
 
 #buttonEnter{
     background-color: darkolivegreen;
-    flex-grow: 3;
 }

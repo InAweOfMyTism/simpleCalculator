@@ -1,12 +1,35 @@
 //3 variables
 
-let num1, num2; //these will be stored as strings
+let num1 = '';
+let num2 = ''; //these will be stored as strings
 let operator; //add, subtract, multiply or divide
-let displayStr = '0'; //store value of whatever is on the screen 
+let displayStr = ''; //store value of whatever is on the screen 
 display();
 
 //function to turn control keys into inputs
-const controlKeys = document.getElementById('controlKeys');
+const controlKeys = document.getElementById('operatorKeys');
+controlKeys.addEventListener('click', (event) => {
+    console.log(event.target.getAttribute('id'));
+    switch (event.target.getAttribute('id')) {
+        case 'buttonEnter':
+            num2 = displayStr;
+            displayStr = operate(num1, num2, operator);
+            display();
+            break;
+        case 'buttonClear':
+            operator = 'multiply'
+            num1 = '';
+            num2 = '';
+            displayStr = ''
+            display();
+            break;
+        default:
+            num1 = displayStr;
+            operator = event.target.getAttribute('id');
+            displayStr = '';
+            display();
+    }
+})
 
 //function to turn number buttons into inputs
 const numberKeys = document.getElementById('numberKeys');
@@ -83,16 +106,16 @@ function dividetwoNumbers(num1, num2) {
 //select operator
 function operate(num1, num2, operator) {
     switch (operator) {
-        case 'add':
+        case 'buttonAdd':
             return addtwoNumbers(num1, num2);
             break;
-        case 'subtract':
+        case 'buttonSubtract':
             return subtracttwoNumbers(num1, num2);
             break;
-        case 'multiply':
+        case 'buttonMultiply':
             return multiplytwoNumbers(num1, num2);
             break;
-        case 'divide':
+        case 'buttonDivide':
             return dividetwoNumbers(num1, num2);
             break;
         default:
