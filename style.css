@@ -13,12 +13,18 @@ body{
     padding: 1em;
 }
 
-.display   {
+#display   {
     background-color: skyblue;
     width: auto;
-    height: 3rem;
+    height: auto;
+    padding: .5em;
     border-radius: .5em;
     margin: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 2rem;
+    overflow: hidden;
 }
 
 .keys {
@@ -31,6 +37,7 @@ body{
     height: 60px;
     border-radius: 15px;
     border: none;
+    font-size: 40px;
 }
 
 .numbers button {
@@ -40,7 +47,6 @@ body{
 .operators button{
     background-color: black;
     color: skyblue;
-    font-size: 40px;
 }
 
 #clear{
